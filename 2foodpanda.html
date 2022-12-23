@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food manya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+
+        }
+
+        nav {
+            background: white;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 75px;
+            align-items: center;
+            padding: 0 75px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 600px;
+            background-position: center;
+
+
+        }
+
+        .banner img {
+            width: 100%;
+            height: 500px;
+            background-position: center;
+
+        }
+
+        .banner h1 {
+
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            letter-spacing: 10px;
+            word-spacing: 5px;
+            text-shadow: 8px 3px 6px #0049ff;
+            margin-top: -328px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 0 20;
+            font-family: sans-serif;
+            margin: 0 10px;
+            /* text-transform: uppercase; */
+        }
+
+        .menu a:first-child {
+            color: #e74c3c;
+            transition: 0 4s;
+
+        }
+
+        .menu a:hover {
+            color: #e74c3c;
+            transition: 0 4s;
+        }
+
+        nav h2 {
+
+            width: 100%;
+            display: flex;
+            height: 75px;
+            background: rgba(210, 202, 202, 0.785);
+            align-items: center;
+            /* margin-top: 385px; */
+        }
+        .flag{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(182, 222, 209);
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .A {
+            text-align: center;
+            width: 100%;
+            height: 800px;
+        }
+
+        .A h1 {
+            color: deeppink;
+        }
+
+        .A p {
+            text-align: center;
+            color: black;
+            font-size: 17px;
+        }
+
+        .A button {
+            border: 1px solid black;
+            background: deeppink;
+            text-align: center;
+            color: white;
+            width: 225px;
+            height: 40px;
+            font-style: italic;
+
+
+        }
+
+        .B {
+            background-image: url(../image/sagar.png);
+            background-position: fixed;
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 728px;
+
+        }
+
+        .B h1 {
+            text-align: center;
+            color: deeppink;
+            /* padding: 300px; */
+            line-height: 49px;
+            padding-left: -10px;
+            margin-left: 100;
+            margin-top: -380px;
+            padding-top: 180px;
+        }
+
+        .B P {
+            text-align: center;
+            padding-left: 218px;
+            padding-left: 43px;
+            color: white;
+        }
+
+        .B button {
+            border: 1px solid black;
+            background: deeppink;
+            text-align: center;
+            color: white;
+            height: 40px;
+            font-style: italic;
+            width: 18%;
+            /* margin-left: 630; */
+            margin-left: 540px;
+
+        }
+
+        .B img {
+            width: 100%;
+            height: 700px;
+            text-align: center;
+            background-attachment: fixed;
+            background-position: fixed;
+
+        }
+
+        .C h1 {
+            text-align: center;
+            line-height: 49px;
+            color: deeppink;
+            margin-top: -430px;
+            padding-top: 200px;
+        }
+
+        .C p {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .C button {
+            text-align: center;
+            border: 1px solid black;
+            color: white;
+            height: 40px;
+            width: 18%;
+            background-color: deeppink;
+            font-style: italic;
+        }
+
+        .C {
+            background-image: url(../image/sagar3.avif);
+            width: 100%;
+            text-align: center;
+            height: 700px;
+            margin-top: 250px;
+            background-attachment: fixed;
+        }
+
+        .D {
+            background-color: deeppink;
+            width: 100%;
+            height: 700px;
+        }
+
+        .D h1 {
+            text-align: center;
+            color: white;
+            padding-top: 300px;
+            line-height: 49px;
+        }
+
+        .D p {
+            text-align: center;
+            color: white;
+        }
+
+        .D button {
+            border: 1px solid black;
+            background: white;
+            text-align: center;
+            color: rgb(162, 9, 34);
+            width: 255px;
+            height: 40px;
+            font-style: italic;
+            margin-left: 516px;
+        }
+
+        .footer {
+            background-image: url(../image/sagar4.png);
+            width: 100%;
+            height: 100px;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="2foodpandaa.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                 <img src="https://www.foodpanda.com/wp-content/uploads/2019/12/food-panda-logo-vector.png"
+                    style="width:148px"> 
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">about</a>
+                <a href="">career</a>
+                <a href="">press</a>
+            </div>
+        </nav>
+    </header>
+    <div class="flag">
+        <h1> choose your location</h1>
+        <img src="image/flag2.png" alt="">
+        <img src="image/flag3.png" alt="">
+        <img src="image/flag4.png" alt="">
+        <img src="image/flag5.png" alt="">
+        <img src="image/flag6.png" alt="">
+        <img src="image/flag7.png" alt="">
+        <img src="image/flag8.png" alt="">
+        <img src="image/flag9.png" alt="">
+        <img src="image/flag10.png" alt="">
+     </div>
+    <div class="banner">
+        <img src="https://www.foodpanda.com/wp-content/uploads/2021/01/foodpanda-model1-opt-scaled.jpg" alt="">
+        <h1> BRINGING GOOD FOOD INTO YOUR<br>EVERYDAY</h1>
+    </div>
+
+    <div class="A">
+        <h2>ABOUT US</h2>
+        <p>for us,its not a just about bringing you good from you favourit restaurants. <br>its about making a
+            connections,which is why we sit down with the chefs. dreaming up menu that will arrive fresh and full of
+            flavour. try us!</p>
+        <br>
+        <button> LEARN MORE</button>
+    </div>
+    <div class="B">
+
+        <h1> CAREERS</h1>
+        <p> Hungry to make difference theres always room at our table.pull up aset.</p>
+        <br>
+        <button>join us</button>
+    </div>
+    <div class="C">
+
+        <h1>PRESS</h1>
+        <P> we become one of the leading playing in 15 markets woldwude across europ and asia. find out why press is
+            buzzing about our work.</P><br>
+        <button>SEE THE LEAST</button>
+    </div>
+    <div class="D">
+        <h1>CONTACT</h1>
+        <P> It's food lovers like you who inspire us to do what we do. Your comments, ideas and questions push us to go
+            that extra mile, every time. So drop us a line!</P>
+        <button> GET IN TOUCH</button>
+    </div>
+
+    <footer class="footer">
+        <div class="icon"></div>
+    </footer>
+
+
+</body>
+
+</html>

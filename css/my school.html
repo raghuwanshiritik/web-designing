@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 550px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        nav {
+            background: white;
+            width: 100%;
+            height: 82px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px 90px;
+
+        }
+
+        .logo {
+            background: url(../image/my\ s\ logo.png);
+            width: 150px;
+            height: 82px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            text-align: center;
+            justify-content: space-between;
+            font-size: 18px;
+            padding: 0 10px;
+            display: inline-block;
+            font-family: poppns;
+            color:rgba(62, 62, 62, 1);
+
+        }
+
+        .menu button{
+            font-size: 14px;
+            background-color: rgba(255, 165, 0, 1);
+            font-family: poppins;
+            border-color: #333333;
+            border-width: 0px;
+            letter-spacing: 0px;
+            padding: 18px 36px;
+            width: auto;
+            box-shadow: 0px 7px 10px -11px rgb(37 37 37);
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            width: auto;
+            border: none;
+        }
+
+        .banner1 img {
+            margin-left: 750px;
+            width: 500px;
+            height: 500px;
+            margin-top: -430px;
+            background-position: center;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+        }
+
+        .banner1 h1 {
+            font-weight: bold;
+            height: 500px;
+            width: 500px;
+            margin-top: -430px;
+            font-size: 50px;
+            margin-left: 80px;
+            font-family: poppins;
+        }
+
+        .banner1 h2 {
+            margin-top: -306px;
+            margin-left: 80px;
+            font-family: Poppins, arial;
+            color: #3e3e3e;
+            font-size: 18px;
+
+        }
+
+        .banner1 button {
+            background-color: rgba(255, 165, 0, 1);
+            height: 54px;
+            width: 340px;
+            margin-left: 73px;
+            margin-top: 60px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .banner1 p {
+            margin-left: 73px;
+            margin-top: 20px;
+            font-family: Poppins, arial;
+            color: #3e3e3e;
+            text-decoration:underline;
+
+        }
+
+        .banner3 img {
+            margin-left: 750px;
+            width: 500px;
+            height: 500px;
+            margin-top: 80px;
+            background-position: center;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+        }
+
+        .banner3 h3 {
+            height: 500px;
+            margin-top: -470px;
+            font-size: 50px;
+            margin-left: 75px;
+            width: 500px;
+            font-family: poppins;
+            font-weight: bold;
+        }
+
+        .banner3 h4 {
+            height: 200px;
+            margin-top: -355px;
+            font-size: 18px;
+            margin-left: 75px;
+            width: 500px;
+            font-family: Poppins, arial;
+            color: #3e3e3e;
+
+        }
+
+        .banner3 button {
+            background-color: rgba(255, 165, 0, 1);
+            height: 54px;
+            width: 340px;
+            margin-left: 73px;
+            margin-top: 60px;
+            font-weight: bold;
+            font-weight: bold;
+            border: none;
+
+        }
+
+        .banner4 img {
+            margin-left: -109px;
+            width: 750px;
+            height: 500px;
+            margin-top: 80px;
+            background-position: center;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+
+        }
+
+        .banner4 h3 {
+             font-weight: bold; 
+            height: 500px;
+            margin-top: -470px;
+            font-size: 50px;
+            margin-left: 671px;
+            font-family:poppins;
+ }
+
+        .banner4 h4 {
+            height: 200px;
+            margin-top: -286px;
+            font-size: 18px;
+            margin-left: 680px;
+            width: 500px;
+            font-family: Poppins, arial;
+             color: #3e3e3e;
+
+        }
+
+        .banner4 button {
+            background-color: rgba(255, 165, 0, 1);
+            height: 54px;
+            width: 340px;
+            margin-left: 687px;
+            margin-top: -80px;
+            font-weight: bold;
+            border: none;
+
+        }
+
+        .banner5 {
+            margin-left: 666px;
+            width: 750px;
+            height: 500px;
+            margin-top: 80px;
+            background-position: center;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+        }
+
+        .banner5 h3 {
+            height: 500px;
+            margin-top: -444px;
+            font-size: 50px;
+            margin-left: -636px;
+            font-family:poppins;
+        }
+
+        .banner5 h4 {
+            margin-top: -284px;
+            margin-left: -636px;
+            font-size: 18px;
+            font-family: Poppins, arial;
+            color: #3e3e3e;
+        }
+
+        .banner5 button {
+            background-color: rgba(255, 165, 0, 1);
+            height: 54px;
+            width: 340px;
+            margin-left: -633px;
+            margin-top: 100px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .banner6 img {
+            margin-left: -109px;
+            width: 750px;
+            height: 500px;
+            margin-top: 80px;
+            background-position: center;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+        }
+
+        .banner6 h3 {
+            font-weight: bold;
+            height: 500px;
+            margin-top: -470px;
+            font-size: 50px;
+            margin-left: 689px;
+            width: 500px;
+            font-family: poppins;
+        }
+
+        .banner6 h4 {
+            height: 200px;
+            margin-top: -340px;
+            font-size: 18px;
+            margin-left: 680px;
+            width: 500px;
+            font-family: Poppins, arial;
+            color: #3e3e3e;
+        }
+
+        .banner6 button {
+            background-color: rgba(255, 165, 0, 1);
+            height: 54px;
+            width: 340px;
+            margin-left: 687px;
+            margin-top: -80px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .banner7 button {
+            background-color: rgba(255, 165, 0, 1);
+            height: 33px;
+            width: 300px;
+            font-size: 20px;
+            margin-left: 494px;
+            margin-top: 200px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .banner7 p {
+            margin-left: 200px;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 70px;
+        }
+
+        .banner7 img {
+            margin-left: -109px;
+            width: 750px;
+            height: 500px;
+            margin-top: 80px;
+            background-position: center;
+            background-color: transparent;
+            background-image: none;
+            background-repeat: no-repeat;
+
+        }
+
+        .banner8 {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            background: whitesmoke;
+        }
+
+        .para1 {
+
+            text-align: center;
+        }
+
+        .para1 i {
+            margin-top: 50px;
+            font-size: 100px;
+        }
+
+        .para1 h1 {
+            margin-top: 41px;
+            font-size: 50px;
+        }
+
+        .para1 p {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .para1 button {
+            background-color: rgba(255, 165, 0, 1);
+            margin-top: 44px;
+            width: 290px;
+            height: 60px;
+            border-radius: 9px;
+            border: none;
+        }
+
+        .banner9 {
+            background: black;
+            width: 100%;
+            height: 250px;
+
+        }
+
+        .banner9 h1 {
+            font-size: 40px;
+            width: 100%;
+            height: 100px;
+            color: white;
+            text-align: center;
+            padding-top: 110px;
+        }
+
+        .banner9 p {
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+            justify-content: space-evenly;
+        }
+
+        .banner10 {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .para2 {
+            width: 42%;
+            height: 549px;
+            background-color: whitesmoke;
+            text-align: center;
+            margin-top: -55px;
+            color: black;
+
+
+        }
+
+        .para2 h2 {
+            margin-top: 41px;
+            font-size: 50px;
+
+        }
+
+        .para2 P {
+            margin-top: 20px;
+            font-size: 17px;
+
+        }
+
+        .para2 button {
+            background-color: rgba(255, 165, 0, 1);
+            margin-top: 44px;
+            width: 290px;
+            height: 60px;
+            border-radius: 9px;
+            border: none;
+        }
+
+        .banner11 {
+            width: 100%;
+            height: 500px;
+            display: flex; 
+            background: black;
+        }
+
+        .para3 {
+            background-image: url(../image/my\ s\ logo.png);
+            width: 150px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        .para4 h1 {
+            font-size: 25px;
+            color: white;
+            margin-left: 50px;
+            margin-top: 100px;
+
+        }
+
+        .para4 ul {
+            font-size: 20px;
+            color: white;
+            margin-left: 70px;
+            margin-top: 25px;
+        }
+
+        .para5 h1 {
+            font-size: 25px;
+            color: white;
+            margin-left: 50px;
+            margin-top: 100px;
+            background-repeat: no-repeat;
+        }
+
+        .para6 ul {
+            font-size: 20px;
+            color: white;
+            margin-left: -206px;
+            margin-top: 150px;
+        }
+
+        .para7 p {
+            font-size: 25px;
+            color: white;
+            margin-left: 200px;
+            margin-top: 100px;
+            background-repeat: no-repeat;
+        }
+
+        .para8 {
+            font-size: 25px;
+            color: white;
+            margin-left: -152px;
+            margin-top: 170px;
+            background-repeat: no-repeat
+        }
+
+        .para8 p {
+            font-size: 15px;
+            color: white;
+            margin-left: 0px;
+            margin-top: 20px;
+            background-repeat: no-repeat
+        }
+
+        .para8 button {
+            background-color: rgba(255, 165, 0, 1);
+            margin-top: 44px;
+            width: 290px;
+            height: 60px;
+            border-radius: 9px;
+            border: none;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .para6 ul :hover{
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            </div>
+            <div class="menu">
+                <a href="">HOME</a>
+                <a href="">BUILDER</a>
+                <a href="">DESIGN</a>
+                <a href="">DISTRICTS</a>
+                <a href="">APP</a>
+                <a href="">LEARN</a>
+                <a href="">CONTACT</a>
+                <a href="">LOGIN</a>
+                <button>
+                    <a href="">GET STARTED</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="banner1">
+        <img src="https://content.app-sources.com/s/423978633624746/uploads/Home_Slider/Moseley_Daycare1-0528668.png">
+        <h1>CREATE<br>YOUR SCHOOL WEBSITE TODAY</h1>
+        <h2>School website design for schools all around the world! We can create<br>your school website design for
+            you or you can use our school website<br>builder to create a website for your school. Choose from one of
+            our<br>professionally designed school templates to get started. Try it for free now.<br>No Credit Card
+            Required!</h2>
+        <button>SCHOOL WEBSITE BUILDING</butto>
+            <button> SCHOOL WEBSIT DESIGN</button>
+            <P>LEARN MORE ABOUT THE SCHOOL WEBSITE BUILDER</P>
+    </div>
+    <div class="banner3">
+        <img src=" https://content.app-sources.com/s/423978633624746/uploads/Home_Slider/Rainbow_slider1-0528669.png">
+        <h3>BUILD YOUR OWN SCHOOL WEBSITE</h3>
+        <h4>Our easy-to-use drag and drop school website builder gives<br>all school the power to create a stunning
+            school website.<br>Choose from one of our professionally designed themes to get<br> started. Add your
+            own content, images and colours to create a<br>unique website for your school. We offer free support
+            directly<br>within our school website builder.</h4>
+        <button>REGISTER NOW</button>
+    </div>
+    <div class="banner4">
+        <img src="https://content.app-sources.com/s/31480997394051551/uploads/Optimised/School-Website-Design-6412298-2094950.jpg"
+            alt="">
+        <h3>LET US CREATE YOUR SCHOOL WEBSITE DESIGN</h3>
+        <h4> We understand being a teacher or part of the school staff may not allow for time to build your school
+            website and that's why we offer a complete school website design solution. We can design and build your
+            school website. We offer affordable prices based on the features you need for your school website.</h4>
+        <button>SCHOOL WEBSITE DESIGN</button>
+    </div>
+    <div class="banner5">
+        <img
+            src="https://content.app-sources.com/s/31480997394051551/thumbnails/640x480/Images/James_Town_school_website_design-2097654.png">
+        <h3>SCHOOL WEBSITE<br> DESIGN INSTANT<br> QUOTE</h3>
+        <h4> We know that your time is precious so we've made it easier to get a<br> quote for your new school
+            website.<br> Simply complete our school website design form to see your custom quote. </h4>
+        <button>GET A QUOTE NOW</button>
+    </div>
+    <div class="banner6">
+        <img
+            src="https://content.app-sources.com/s/423978633624746/uploads/Images/Free_School_Website_Design_Course_PNG-2885919.png">
+        <h3>Free school website design course</h3>
+        <h4> Our school website builder is super easy to use but we do understand that building a school website for the
+            first time may seem daunting. That's why we've created a free course to show you how to build a school
+            website. We cover everything from preparation, design, building to publishing your new school website. This
+            is the perfect companion for your school website building journey!</h4>
+        <button>GO TO COURSE</button>
+    </div>
+    <div class="banner7">
+        <button>COMPLIANCE FEATURES</button>
+        <p>Tools made for compliance</p>
+    </div>
+    <div class="banner8">
+        <div class="para1">
+            <i class="fa-solid fa-user"></i>
+            <h1>GDPR & Privacy</h1>
+            <p>We provide tools to allow your website <br> users to easily manage their personal <br>
+                data. These tools, in turn,
+                help you to <br> create a GDPR compliant school website <br> that users can trust.</p>
+            <button>FIND OUT MORE</button>
+        </div>
+        <div class="para1">
+            <i class="fa-solid fa-universal-access"></i>
+            <h1>Accessibilty</h1>
+            <p>Websites should be accessible to <br> everyone. That's why we provide <br> accessibility solutions to
+                ensure your
+                new <br> school website is accessible and WCAG <br> AA 2.1, ADA, 508, EN 301-549 compliant.</p>
+            <button>FIND OUT MORE</button>
+        </div>
+    </div>
+    <div class="banner9">
+        <h1>2 WAYS TO DESIGN YOUR SCHOOL WEBSITE</h1>
+        <P>what way will you choose?</P>
+    </div>
+    <div class="banner10">
+        <div class="para2">
+            <h2>YOU DESIGN<br>&BUILD</h2>
+            <p>You Design & Build Your Website<br>
+
+                Professional Templates<br>
+
+                Access to School Website Builder<br>
+
+                Free Technical Support<br>
+
+                Secure Hosting<br>
+
+                SSL Certificate<br>
+
+                Free Trial<br>
+
+                from $15 per month</p>
+            <button>TRY THE BUILDER</button>
+        </div>
+        <div class="para2">
+            <h2>WE DESIGN<br>&BUILD</h2>
+            <P>Custom School Website Design<br>
+
+                We Setup Pages, Blog & Store<br>
+
+                We Add Website Content<br>
+
+                Access to School Website Builder<br>
+
+                Free Technical Support<br>
+
+                Secure Hosting<br>
+
+                SSL Certificate<br>
+                Contact us for a quote!</P>
+            <button>GET A QUOTE NOW</button>
+        </div>
+    </div>
+    <div class="banner11">
+        <div class="para3">
+        </div>
+        <div class="para4">
+            <h1>MENU</h1>
+            <ul type="">
+                <li>Home</li>
+                <li>Builder</li>
+                <li>Design</li>
+                <li>Districs</li>
+                <li>Learn</li>
+                <li>App</li>
+                <li> Accessibility Guide</li>
+                <li>GDPR & Privavy Guide</li>
+                <li> YouTube Channel</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="para5">
+            <h1>IMPORTANT LINK</h1>
+        </div>
+        <div class="para6">
+            <ul type="">
+                <li>Terms and Conditions</li>
+                <li>Privacy policy</li>
+                <li>Cookies policy</li>
+                <li>Data Request</li>
+                <li>Accessibility Statement</li>
+            </ul>
+        </div>
+        <div class="para7">
+            <p>SUBSCRIBER</p>
+        </div>
+        <div class="para8">
+            Email:
+            <input type="text" Email="" placeholder="Enter your Email">
+            <p>I consent to my submitted data bein<br>collected and stored as detailed in My<br> School Design's Privacy
+                Policy</p>
+            <button>SUBSCRIBER</button>
+        </div>
+</body>
+
+</html>

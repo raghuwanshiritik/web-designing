@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        header {
+            width: 100%;
+            height: 85px;
+            display: flex;
+            background: white;
+            position: fixed;
+            margin-top: -10px;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 40px;
+            margin-top: 34px;
+
+        }
+
+        .menu {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            margin-right: -31px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            text-align: center;
+            justify-content: space-between;
+            font-size: 18px;
+            padding: 0 10px;
+            display: inline-block;
+            font-family: poppns;
+            color: rgba(62, 62, 62, 1);
+            margin-left: 30px;
+            padding-top: 40px;
+        }
+
+        .img {
+            margin: 40px;
+            margin-right: 8px;
+        }
+
+        .search {
+            margin-top: 40px;
+        }
+
+        .cart {
+            float: right;
+            margin-top: 60px;
+            margin-right: 6px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cart :hover {
+            color: brown;
+        }
+
+        .banner1 {
+            width: 100%;
+            height: 520px;
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .banner2 {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            background-repeat: no-repeat;
+        }
+
+        .A img {
+            width: 300px;
+            height: 320px;
+            margin: 10px;
+
+        }
+
+        .A p {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .B img {
+            width: 300px;
+            height: 320px;
+            margin: 10px;
+        }
+
+        .B P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .C img {
+            width: 300px;
+            height: 320px;
+            margin: 10px;
+        }
+
+        .C P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .D img {
+            width: 300px;
+            height: 320px;
+            margin: 10px;
+        }
+
+        .D P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .banner3 {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            background-repeat: no-repeat;
+        }
+
+        .E img {
+            width: 300px;
+            height: 320px;
+            margin: 10px;
+        }
+
+        .E P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .F img {
+            height: 320px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .F P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .G img {
+            height: 320px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .G P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .H img {
+            height: 320px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .H P {
+            margin-left: 97px;
+            margin-top: -175px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .banner4 {
+            width: 100%;
+            height: 530px;
+            display: flex;
+        }
+
+        .banner4 p {
+            margin-left: -821px;
+            margin-top: 120px;
+            color: white;
+            font-size: 50px;
+        }
+
+        .banner4 p2 {
+            margin-left: -320px;
+            margin-top: 185px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .banner4 button {
+            margin-top: 238px;
+            color: #fff;
+            font-size: 30px;
+            background-color: #ffffff1a;
+            border: white;
+            width: 206px;
+            height: 75px;
+            margin-left: -200px;
+        }
+
+        .banner5 {
+            width: 100%;
+            height: 585px;
+            display: flex;
+        }
+
+        .para1 img {
+            width: 634px;
+            height: 550px;
+            margin: 8px;
+        }
+
+        .para1 p {
+            margin-left: 245px;
+            margin-top: -300px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .para2 img {
+            width: 590px;
+            height: 550px;
+            margin: 8px;
+        }
+
+        .para2 p {
+            margin-left: 245px;
+            margin-top: -300px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .banner6 {
+            width: 100%;
+            height: 585px;
+            display: flex;
+        }
+
+        .para3 img {
+            width: 634px;
+            height: 550px;
+            margin: 8px;
+        }
+
+        .para3 p {
+            margin-left: 245px;
+            margin-top: -300px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .para4 img {
+            width: 590px;
+            height: 550px;
+            margin: 8px;
+        }
+
+        .para4 p {
+            margin-left: 245px;
+            margin-top: -300px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .banner7 {
+            width: 1000%;
+            height: 300px;
+            background-color: black;
+        }
+
+        .banner7 p {
+            margin-left: 415px;
+            margin-top: 30px;
+            font-size: 35px;
+            color: white;
+        }
+
+        .banner7 h2 {
+            margin-left: 460px;
+            margin-top: -5px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .para5 button {
+            margin-left: 0px;
+            margin-top: 50px;
+            font-size: 20px;
+            color: black;
+            height: 55px;
+        }
+
+        .banner8 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+
+        }
+
+        .banner8 p {
+            margin-left: 40px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .para6 ul {
+            margin-left: -88px;
+            margin-top: 110px;
+        }
+
+        .para7 p {
+            margin-left: 280px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        .para8 ul {
+            margin-left: -165px;
+            margin-top: 110px;
+        }
+
+        .twitter i {
+            margin-left: -420px;
+            margin-top: 445px;
+        }
+
+        .facebook i {
+            margin-left: -375px;
+            margin-top: 445px
+        }
+
+        .youtube i {
+            margin-left: -329px;
+            margin-top: 445px
+        }
+
+        .pintrest i {
+            margin-left: -279px;
+            margin-top: 445px
+        }
+
+        .instgram i {
+            margin-left: -240px;
+            margin-top: 445px
+        }
+
+        .envelope i {
+            margin-left: -195px;
+            margin-top: 445px
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0907/2228/files/TMC_PNG_Corrected_280x@2x.png?v=1613692460"
+                alt="">
+        </div>
+        <div class="menu">
+            <a href="">MOTO LUGGAGE</a>
+            <a href="">RIDER GEAR</a>
+            <a href="">LIFESTYLE GOODS</a>
+            <a href="">MOTO-GOODS</a>
+            <a href="">BLOG</a>
+            <a href="">ABOUT US</a>
+            <div class="img">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>CARTS</h4>
+        </div>
+    </header>
+    <div class="banner1">
+        <img
+            src="https://cdn.shopify.com/s/files/1/0907/2228/files/Website_Banners-3_c8255e55-c196-4156-be59-434b4a85a43c_2048x.jpg?v=1661875148">
+    </div>
+    <div class="banner2">
+        <div class="A">
+            <img
+                src=https://cdn.shopify.com/s/files/1/0907/2228/files/1_85d62396-22fb-4c0e-9972-94cf6254c03c_2048x.png?v=1614366461">
+            <p>GRIPS WRAP</p>
+        </div>
+        <div class="B">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/11_f87594f3-bd4c-46c2-9036-e1846173a87f_2048x.jpg?v=1614366660">
+            <p>BACKPACKS & SADDLEBAGS</p>
+        </div>
+        <div class="C">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/1_82e21564-aa48-4dab-99da-6ae82e35f91f_2048x.png?v=1620898597">
+            <p>TOUR PACKS</p>
+        </div>
+        <div class="D">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/3_a4725577-4d9f-48d0-821d-53743e979928_2048x.png?v=1620901405">
+            <P>FACE MASK</p>
+        </div>
+    </div>
+    <div class="banner3">
+        <div class="E">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/3_d65a36ed-55dc-4b1a-964c-89571aa8f836_2048x.png?v=1614366661">
+            <P>BELT</p>
+        </div>
+        <div class="F">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/2_687b6655-c6b1-47c8-9093-6daf49734561_2048x.png?v=1621229844">
+            <P>TANK BAGS AND PHONE POUCH</p>
+        </div>
+        <div class="G">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/4_649605ff-dfdf-4573-a6ee-9ee612f70067_2048x.png?v=1620898514">
+            <P>LIFE STYLE GOODS</p>
+        </div>
+        <div class="H">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/14_d6eea7c7-6439-41e9-bedd-8d03c51216dd_2048x.jpg?v=1614366660">
+            <P>HEADLIGHT X</p>
+        </div>
+    </div>
+    <div class="banner4">
+        <img src="https://cdn.shopify.com/s/files/1/0907/2228/files/Untitled_design-4_2048x.png?v=1621231091">
+        <p>HAND MADE IS</p>
+        <p2>BATTER MADE</p2>
+        <button>READ MORE</button>
+    </div>
+    <div class="banner5">
+        <div class="para1">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/2_988db070-76e6-4947-9339-480bf3c6dfbe_2048x.jpg?v=1632377901">
+            <p>HELMET HANDER</p>
+        </div>
+        <div class="para2">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/1_4eb9f0fe-ecf5-400a-bb59-da315bfbd483_2048x.jpg?v=1632377804">
+            <p>WALLETS</p>
+        </div>
+    </div>
+    <div class="banner6">
+        <div class="para3">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/12_aac9c8bc-a51b-4b19-88e6-f0039cad3fd7_2048x.jpg?v=1614366660">
+            <p>MILITARY DUFFEL</p>
+        </div>
+        <div class="para4">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0907/2228/files/13_edbf1d05-ffac-4766-99ae-dd9fc9c73d1a_2048x.jpg?v=1614366660">
+            <P>TOOL ROLLS</p>
+        </div>
+    </div>
+    <div class="banner7">
+        <p>SIGN UP TO OUR NEWSLETTER</p>
+        <h2>Be the first to get updates,secret sales and more.....</h>
+            <div class="para5">
+                <button>Enter your emil Address:</button>
+                <button>SINE UP:</button>
+            </div>
+    </div>
+    <div class="banner8">
+        <P>FOOTER</P>
+        <div class="para6">
+            <ul type="">
+                <li>Search</li>
+                <br>
+                <li>Quick Shipping Guarantee and Delivery</li>
+                <br>
+                <li>Returns Policy</li>
+                <br>
+                <li>Privacy Policy</li>
+                <br>
+                <li>Terms & Conditions</li>
+            </ul>
+        </div>
+        <div class="para7">
+            <p>GET IN TOUCH:</p>
+        </div>
+        <div class="para8">
+            <ul type="">
+                <li>Need some product guidence,have a review or just want to chat</li>
+                <br>
+                <li>Ride in and meet us at</li>
+                <br>
+                <li>Trip Machine Company </li>
+                <br>
+                <li>Plot no. 208,Udyog Vihar industrial Area Phase</li>
+                <br>
+                <li>V1,Sector 37,Gurugram,Haryana 122004</li>
+                <br>
+                <li>or drop in a Mail at</li>
+                <br>
+                <li>Mail@tripmachinecompney.com</li>
+                <br>
+                <li>Call Us or WhatsApp Us at +919416856322</li>
+                <br>
+                <li>Fouteen Eighteen Motolife LLP</li>
+            </ul>
+        </div>
+        <div class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+        </div>
+        <div class="youtube">
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="pintrest">
+            <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+        <div class="instgram">
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="envelope">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+</body>
+
+</html>
